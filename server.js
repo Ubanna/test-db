@@ -43,7 +43,8 @@ mongoose.connect(
 
 app.use('/pages', pageRoute);
 
-const PORT = process.env.APP_PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`server is running on port ${PORT}`);
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+  console.log("App is running on port " + port);
 });
